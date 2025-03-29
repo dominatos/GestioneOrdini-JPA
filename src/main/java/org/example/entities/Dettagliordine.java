@@ -2,14 +2,7 @@
 
 package org.example.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ForeignKey;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 @Entity
 @NamedQuery(
@@ -26,10 +19,11 @@ public class Dettagliordine {
             scale = 2
     )
     private double prezzo_unitario;
-    @ManyToOne
+    @OneToOne
     @JoinColumn(
             name = "id_ordine",
             nullable = false,
+
             foreignKey = @ForeignKey(
                     name = "ordinidetagli_ordini_fk"
             )

@@ -50,7 +50,9 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         generateDB(100);
-        generateOrders(5);
+        generateOrders(10);
+
+
         ordineDAO.getAllOrdine().forEach(Ordine::stampa);
     }
 
