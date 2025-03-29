@@ -1,4 +1,4 @@
-# GestioneOrdini-JPA
+<pre># GestioneOrdini-JPA
  
 Gestione di un Database Relazionale MySQL con JPA in Java
 
@@ -37,3 +37,4 @@ Effettuare un ordine, salvando:
     I prodotti acquistati con relative quantità e prezzi unitari.
     Visualizzare lo storico degli ordini con dettagli sui prodotti acquistati.
     Aggiornare ed eliminare ordini e prodotti.
+</pre>
